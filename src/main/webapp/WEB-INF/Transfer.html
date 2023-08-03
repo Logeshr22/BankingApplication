@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="app.css">
+	<meta charset="ISO-8859-1">
+	<title>Transfer Amount</title>
+</head>
+
+<body>
+	<div class="formContainer">
+		<form action="Transfer" method="post">
+			<div class="header">
+				<h1>Transfer Amount</h1>
+			</div>
+			<br>
+			<table>
+				<tr>
+					<td><label for="customer_id">Customer ID</label></td>
+					<td><input class="input" type="text" name="customer_id"></td>
+					<td><label for="bank_name">Bank Name</label></td>
+					<td><input class="input" type="text" name="bank_name"></td>
+				</tr>
+				<tr>
+
+				</tr>
+				<tr>
+					<td><label for="ifsc">IFSC Code</label></td>
+					<td><input class="input" type="text" name="ifsc"></td>
+					<td><label for="receiver_ifsc">Receiver IFSC</label></td>
+					<td><input class="input" type="text" name="receiver_ifsc"></td>
+				</tr>
+				<tr>
+					<td><label for="acc_no">Accout No</label></td>
+					<td><input class="input" type="text" name="acc_no"></td>
+					<td><label for="receiver_accno">Receiver Acc No</label></td>
+					<td><input class="input" type="text" name="receiver_accno"></td>
+				</tr>
+				<tr>
+					<td><label for="amount">Amount</label></td>
+					<td><input class="input" type="text" name="amount"></td>
+					<td><label for="pin">Pin</label></td>
+					<td><input class="input" type="text" name="pin"></td>
+			</table>
+			<div class="button">
+				<input id="LoginButton" type="submit" value="Transfer">
+			</div>
+
+		</form>
+	</div>
+</body>
+
+</html>
