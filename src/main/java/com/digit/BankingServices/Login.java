@@ -43,11 +43,11 @@ public class Login extends HttpServlet{
 				resp.sendRedirect("/BankingApplication/Home.jsp");
 			}
 			else {
-				resp.sendRedirect("/BankingApplication/Failed.html");
+				resp.sendRedirect("/BankingApplication-Servlet/Failed.html");
 			}
 		}
 		catch(Exception e) {
-			resp.sendRedirect("/BankingApplication/Failed.html");
+			resp.sendRedirect("/BankingApplication-Servlet/Failed.html");
 		}
 	}
 }

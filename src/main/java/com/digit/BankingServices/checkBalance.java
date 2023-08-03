@@ -41,11 +41,11 @@ public class checkBalance extends HttpServlet {
 			rs = pstmt.executeQuery();
 			if(rs.next()== true) {
 				session.setAttribute("balance", rs.getInt("Balance"));
-				resp.sendRedirect("/BankingApplication/Balance.jsp");
+				resp.sendRedirect("/BankingApplication-Servlet/Balance.jsp");
 				
 			}
 			else {
-				resp.sendRedirect("/BankingApplication/Failed.html");
+				resp.sendRedirect("/BankingApplication-Servlet/Failed.html");
 			}
 		}
 		catch(Exception e) {

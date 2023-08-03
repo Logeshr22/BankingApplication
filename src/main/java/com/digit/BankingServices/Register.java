@@ -51,11 +51,11 @@ public class Register extends HttpServlet{
 			int x = pstmt.executeUpdate();
 			
 			if(x>0) {
-				resp.sendRedirect("/BankingApplication/Success.html");
+				resp.sendRedirect("/BankingApplication-Servlet/Success.html");
 			}
 		}
 		catch(Exception e) {
-			resp.sendRedirect("/BankingApplication/Failed.html");
+			resp.sendRedirect("/BankingApplication-Servlet/Failed.html");
 			e.printStackTrace();
 		}
 	}
